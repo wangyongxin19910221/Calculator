@@ -37,5 +37,21 @@ public:
 //	CString Result;
 	CString Result;
 	afx_msg void OnBnClickedButton24();
+	afx_msg void OnBnClickedButton25();
+	afx_msg void OnBnClickedButton29();
+	afx_msg void OnBnClickedButton30();
+	afx_msg void OnBnClickedButton31();
+	afx_msg void OnBnClickedButton35();
+	afx_msg void OnBnClickedButton36();
+	afx_msg void OnBnClickedButton37();
+	afx_msg void OnBnClickedButton41();
+	afx_msg void OnBnClickedButton42();
+	afx_msg void OnBnClickedButton26();
+	afx_msg void OnBnClickedButton32();
+	afx_msg void OnBnClickedButton38();
+	afx_msg void OnBnClickedButton44();
+	afx_msg void OnBnClickedButton45();
+	afx_msg void OnBnClickedButton47();
+	afx_msg void OnBnClickedButton49();
 };
 

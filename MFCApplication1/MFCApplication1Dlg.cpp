@@ -70,6 +70,22 @@ BEGIN_MESSAGE_MAP(CMFCApplication1Dlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON23, &CMFCApplication1Dlg::OnBnClickedButton23)
 	ON_BN_CLICKED(IDC_BUTTON24, &CMFCApplication1Dlg::OnBnClickedButton24)
+	ON_BN_CLICKED(IDC_BUTTON25, &CMFCApplication1Dlg::OnBnClickedButton25)
+	ON_BN_CLICKED(IDC_BUTTON29, &CMFCApplication1Dlg::OnBnClickedButton29)
+	ON_BN_CLICKED(IDC_BUTTON30, &CMFCApplication1Dlg::OnBnClickedButton30)
+	ON_BN_CLICKED(IDC_BUTTON31, &CMFCApplication1Dlg::OnBnClickedButton31)
+	ON_BN_CLICKED(IDC_BUTTON35, &CMFCApplication1Dlg::OnBnClickedButton35)
+	ON_BN_CLICKED(IDC_BUTTON36, &CMFCApplication1Dlg::OnBnClickedButton36)
+	ON_BN_CLICKED(IDC_BUTTON37, &CMFCApplication1Dlg::OnBnClickedButton37)
+	ON_BN_CLICKED(IDC_BUTTON41, &CMFCApplication1Dlg::OnBnClickedButton41)
+	ON_BN_CLICKED(IDC_BUTTON42, &CMFCApplication1Dlg::OnBnClickedButton42)
+	ON_BN_CLICKED(IDC_BUTTON26, &CMFCApplication1Dlg::OnBnClickedButton26)
+	ON_BN_CLICKED(IDC_BUTTON32, &CMFCApplication1Dlg::OnBnClickedButton32)
+	ON_BN_CLICKED(IDC_BUTTON38, &CMFCApplication1Dlg::OnBnClickedButton38)
+	ON_BN_CLICKED(IDC_BUTTON44, &CMFCApplication1Dlg::OnBnClickedButton44)
+	ON_BN_CLICKED(IDC_BUTTON45, &CMFCApplication1Dlg::OnBnClickedButton45)
+	ON_BN_CLICKED(IDC_BUTTON47, &CMFCApplication1Dlg::OnBnClickedButton47)
+	ON_BN_CLICKED(IDC_BUTTON49, &CMFCApplication1Dlg::OnBnClickedButton49)
 END_MESSAGE_MAP()
 
 
@@ -170,5 +186,132 @@ void CMFCApplication1Dlg::OnBnClickedButton24()
 {
 	UpdateData(TRUE);
 	Result += "8";
+	UpdateData(FALSE);
+}
+
+void CMFCApplication1Dlg::OnBnClickedButton25()
+{
+	UpdateData(TRUE);
+	Result += "9";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton29()
+{
+	UpdateData(TRUE);
+	Result += "4";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton30()
+{
+	UpdateData(TRUE);
+	Result += "5";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton31()
+{
+	UpdateData(TRUE);
+	Result += "6";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton35()
+{
+	UpdateData(TRUE);
+	Result += "1";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton36()
+{
+	UpdateData(TRUE);
+	Result += "2";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton37()
+{
+	UpdateData(TRUE);
+	Result += "3";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton41()
+{
+	UpdateData(TRUE);
+	Result += "0";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton42()
+{
+	UpdateData(TRUE);
+	Result += ".";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton26()
+{
+	UpdateData(TRUE);
+	Result += "+";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton32()
+{
+	UpdateData(TRUE);
+	Result += "-";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton38()
+{
+	UpdateData(TRUE);
+	Result += "*";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton44()
+{
+	UpdateData(TRUE);
+	Result += "÷";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton45()
+{
+	UpdateData(TRUE);
+	Result += "/";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton47()
+{
+	UpdateData(TRUE);
+	Result += "（";
+	UpdateData(FALSE);
+}
+
+
+void CMFCApplication1Dlg::OnBnClickedButton49()
+{
+	UpdateData(TRUE);
+	Result += "）";
 	UpdateData(FALSE);
 }
