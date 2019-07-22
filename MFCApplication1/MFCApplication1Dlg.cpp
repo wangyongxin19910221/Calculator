@@ -60,7 +60,6 @@ CMFCApplication1Dlg::CMFCApplication1Dlg(CWnd* pParent /*=NULL*/)
 void CMFCApplication1Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	//  DDX_Text(pDX, IDC_EDIT2, Result);
 	DDX_Text(pDX, IDC_EDIT2, Result);
 }
 
@@ -86,6 +85,7 @@ BEGIN_MESSAGE_MAP(CMFCApplication1Dlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON45, &CMFCApplication1Dlg::OnBnClickedButton45)
 	ON_BN_CLICKED(IDC_BUTTON47, &CMFCApplication1Dlg::OnBnClickedButton47)
 	ON_BN_CLICKED(IDC_BUTTON49, &CMFCApplication1Dlg::OnBnClickedButton49)
+	ON_BN_CLICKED(IDC_BUTTON43, &CMFCApplication1Dlg::OnBnClickedButton43)
 END_MESSAGE_MAP()
 
 
@@ -314,4 +314,23 @@ void CMFCApplication1Dlg::OnBnClickedButton49()
 	UpdateData(TRUE);
 	Result += "）";
 	UpdateData(FALSE);
+}
+
+//等号计算
+void CMFCApplication1Dlg::OnBnClickedButton43()
+{
+
+	/**CString string;
+
+	//sprintf(string,"%d",Result.GetLength());
+	string.Format(_T("%d"), Result.GetLength());
+	//消息框
+	MessageBox(string);**/
+	// 等号
+
+	UpdateData(TRUE);
+	int i, j, a[50];
+	MessageBox(Result);
+
+	
 }
