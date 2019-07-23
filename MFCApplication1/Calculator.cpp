@@ -14,7 +14,7 @@ Calculator<ElemType>::Calculator()
 
 //销毁栈，将内存空间释放
 template <typename ElemType>
-Calculator::~Calculator()
+Calculator<ElemType>::~Calculator()
 {
 	delete[]sq.base;
 }

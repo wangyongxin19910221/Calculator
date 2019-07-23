@@ -31,10 +31,10 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	void OnBnClickedButton23();
+	int Calc(CString InfixString);
 	DECLARE_MESSAGE_MAP()
 
 public:
-//	CString Result;
 	CString Result;
 	afx_msg void OnBnClickedButton24();
 	afx_msg void OnBnClickedButton25();

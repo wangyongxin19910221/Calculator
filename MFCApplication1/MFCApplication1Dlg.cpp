@@ -6,12 +6,14 @@
 #include "MFCApplication1.h"
 #include "MFCApplication1Dlg.h"
 #include "afxdialogex.h"
+#include "Calculator.cpp"
+#include <string>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
-
+  Calculator<double> cal;
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
 
 class CAboutDlg : public CDialogEx
@@ -327,10 +329,35 @@ void CMFCApplication1Dlg::OnBnClickedButton43()
 	//消息框
 	MessageBox(string);**/
 	// 等号
-
-	UpdateData(TRUE);
-	int i, j, a[50];
-	MessageBox(Result);
-
 	
+	int sum; CString str;
+	UpdateData(TRUE);
+	
+	sum = Calc(Result);
+	str.Format(_T("%d"), sum);
+	Result = str;
+	UpdateData(FALSE);
+	
+}
+
+int CMFCApplication1Dlg::Calc(CString InfixString)
+{
+	
+	char Infix[MAX_EXP_LEN], Postfix[MAX_EXP_LEN];
+	int sum;
+	CString string;
+	
+    //CString 转换成char数组问题解决
+
+	char* tmpch;
+	int wLen = WideCharToMultiByte(CP_ACP, 0, InfixString, -1, NULL, 0, NULL, NULL);
+	tmpch = new char[wLen + 1];
+	WideCharToMultiByte(CP_ACP, 0, InfixString, -1, tmpch, wLen, NULL, NULL);
+	for (int i = 0; i < wLen; ++i)
+		Infix[i] = tmpch[i];
+
+	cal.Infix2Postfix(Infix, Postfix);
+	sum = cal.Calculation(Postfix);
+
+	return sum;
 }
