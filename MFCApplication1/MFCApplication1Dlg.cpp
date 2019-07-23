@@ -88,6 +88,7 @@ BEGIN_MESSAGE_MAP(CMFCApplication1Dlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON47, &CMFCApplication1Dlg::OnBnClickedButton47)
 	ON_BN_CLICKED(IDC_BUTTON49, &CMFCApplication1Dlg::OnBnClickedButton49)
 	ON_BN_CLICKED(IDC_BUTTON43, &CMFCApplication1Dlg::OnBnClickedButton43)
+	ON_BN_CLICKED(IDC_BUTTON11, &CMFCApplication1Dlg::OnBnClickedButton11)
 END_MESSAGE_MAP()
 
 
@@ -360,4 +361,11 @@ int CMFCApplication1Dlg::Calc(CString InfixString)
 	sum = cal.Calculation(Postfix);
 
 	return sum;
+}
+
+void CMFCApplication1Dlg::OnBnClickedButton11()
+{
+	UpdateData(TRUE);
+	Result = "0";
+	UpdateData(FALSE);
 }
